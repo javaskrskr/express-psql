@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  postgres:
+    build: ./db
+    env_file:
+      - path: ./.env
+        required: false
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    ports:
+      - "35432:5432"
+  app:
+    restart: on-failure
+    build: .
+    depends_on:
+      - postgres
+    env_file:
+      - path: ./.env
+        required: false
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    volumes:
+      - .:/app/
+      - /app/nodde_modules
+

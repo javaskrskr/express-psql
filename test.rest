@@ -1,0 +1,14 @@
+### GET: /
+GET http://localhost:3000
+
+### GET: /data
+GET http://localhost:3000/data
+
+### POST: /
+POST http://localhost:3000
+Content-Type:  application/json
+
+{
+    "name": "timothy",
+    "location": "tokyo"
+}

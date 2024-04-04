@@ -1,8 +1,8 @@
 # express-psql
-express and psql with k8s
+Express & psql With K8s
 
 ## test
-- using test.rest with rest client on extension to test req
+- Using test.rest with rest client on extension to test req
 
 ## ENV
 ```yml
@@ -18,10 +18,11 @@ NODE_PORT=5000
 - npm install
 
 ## START LOCALLY
-- nvm use 20
-- npm install
-- docker-compose up -d
-- access http://localhost:5000/
+- On term `nvm use 20`
+- On term `npm install`
+- Build the container from the ./root directory: `docker-compose up -d`
+- Access `http://localhost:5000/`
+- Clean up docker container: `docker-compose down`
 
 ## K8S IMPLEMENTATION LOCALLY
 - Download kind: `brew install kind`

@@ -2,17 +2,20 @@
   "name": "express-psql",
   "version": "1.0.0",
   "description": "express and psql with k8s",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js"
+    "start": "node index.js",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "*",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "nodemon": "^3.1.0",
     "pg": "^8.11.4"
   },
   "devDependencies": {

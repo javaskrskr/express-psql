@@ -1,3 +1,27 @@
 node_modules
-
 .env
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+server/node_modules
+
+# testing
+/server/coverage
+
+# production
+/server/build
+
+# misc
+.DS_Store
+.env.local
+.env.deverlopment.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
